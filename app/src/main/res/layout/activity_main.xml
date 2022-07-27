@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tvSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:drawableTop="@drawable/ic_satellite"
+            android:text="@string/space_station"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tvFlight"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+           android:drawableTop="@drawable/ic_satellite"
+            android:text="@string/flights"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tvRover"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_satellite"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="@string/rovers"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivImg1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/image2"
+        />
+
+    <ImageView
+
+        android:id="@+id/ivImg2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/image3"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/ivImg3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_toEndOf="@id/ivImg1"
+      android:layout_toStartOf="@id/ivImg2"
+        android:layout_alignBottom="@id/ivImg2"
+        android:layout_alignTop="@id/ivImg2"
+        android:layout_marginStart="-40dp"
+        android:layout_marginEnd="-40dp"
+        android:src="@drawable/image4"
+/>
+
+    <Switch
+        android:id="@+id/swTra"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:layout_below="@id/ivImg1"
+        android:layout_marginTop="30dp"
+        android:text="@string/one_way"
+        android:textSize="25dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/traveller"
+        android:layout_marginTop="20dp"
+        android:background="@color/purple_200"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/swTra"
+        />
+
+
+
+</RelativeLayout>
